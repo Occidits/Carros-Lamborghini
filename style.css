@@ -125,8 +125,12 @@ section button:hover {
 
 /* Estiliza cada item de resultado */
 .item-resultado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: auto;
-    width: 40rem;
+    width: 100%;
     background: #FFFFFF;
     /* Cor de fundo dos itens */
     border-radius: 0.6rem;
@@ -139,12 +143,25 @@ section button:hover {
     /* Sombra leve */
 }
 
+.item-resultado .texto {
+    flex: 1;
+}
+
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
     font-size: 1.5rem;
     /* Tamanho da fonte */
     color: #222831;
     /* Cor do texto */
+}
+
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #45474B;
+    /* Cor do texto */
+    margin: 0.5rem 0;
+    /* Margem acima e abaixo */
 }
 
 /* Estiliza os links dentro dos itens de resultado */
@@ -161,12 +178,9 @@ section button:hover {
     /* Adiciona sublinhado ao passar o mouse */
 }
 
-/* Estiliza a descrição meta dentro dos itens de resultado */
-.descricao-meta {
-    color: #45474B;
-    /* Cor do texto */
-    margin: 0.5rem 0;
-    /* Margem acima e abaixo */
+.item-resultado img {
+    width: 30%;
+    border-radius: 0.6rem;
 }
 
 /* Estiliza o rodapé da página */

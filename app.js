@@ -6,15 +6,20 @@ function pesquisar(){
     for (let dado of dados) {
     resultados += `
         <div class="item-resultado">
-            <h2>
-                <a href="${dado.link}" target="_blank">
-                    ${dado.modelo}
-                </a>              
-            </h2>
-            <p class="descricao-meta">${dado.fabricacao}</p>
-            <p class="descricao-meta">
-                ${dado.descricao}
-            </p>
+            <div class="texto">
+                <h2>
+                    <a href="${dado.link}" target="_blank">
+                        ${dado.modelo}
+                    </a>              
+                </h2>
+                <p class="descricao-meta">
+                    ${dado.fabricacao}
+                </p>
+                <p class="descricao-meta">
+                    ${dado.descricao}
+                </p>
+            </div>
+            <img src="${dado.imagem}" alt="Imagem do Modelo ${dado.modelo}">
         </div>
         `
     }
